@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TIPSTER SHADOW - Invitación</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0f10;
+      --card:#262626;
+      --muted:#9b9b9b;
+      --accent-green:#2dd36f;
+      --accent-blue:#1e88e5;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Montserrat,system-ui,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#000 0%, #0a0a0a 100%);color:var(--white)}
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:48px 24px}
+
+    .card{background:var(--card);width:100%;max-width:760px;border-radius:20px;padding:36px 32px;box-shadow:0 8px 30px rgba(0,0,0,.6);text-align:center}
+
+    .telegram-bar{display:flex;align-items:center;gap:12px;padding:10px 18px;border-radius:12px;background:#111;margin-bottom:20px}
+    .telegram-bar img{width:28px;height:28px}
+    .telegram-bar .brand{font-weight:700}
+
+    .logo{width:120px;height:120px;border-radius:50%;overflow:hidden;margin:6px auto 18px;display:flex;align-items:center;justify-content:center;background:#000}
+    .logo img{width:100%;height:100%;object-fit:cover}
+
+    h1{font-size:36px;margin:6px 0 0;letter-spacing:1px}
+    .sub{color:var(--muted);margin-top:6px;font-weight:500}
+
+    .desc{margin-top:20px;font-size:18px;line-height:1.4}
+    .desc .bold{font-weight:700}
+
+    .green{color:var(--accent-green);font-weight:800;margin-top:18px;font-size:20px}
+
+    .cta{margin-top:22px}
+    .btn{
+      display:inline-flex;align-items:center;gap:12px;padding:14px 26px;border-radius:28px;background:var(--accent-blue);color:#fff;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(30,136,229,.12);
+    }
+    .btn .plane{width:18px;height:18px;display:inline-block}
+
+    .note{color:var(--muted);font-size:14px;margin-top:20px}
+
+    /* mobile tweaks */
+    @media (max-width:420px){
+      .card{padding:22px;border-radius:16px}
+      h1{font-size:28px}
+      .logo{width:96px;height:96px}
+      .desc{font-size:16px}
+      .green{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+
+      <div class="telegram-bar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+        <div class="brand">Telegram</div>
+      </div>
+
+      <div class="logo">
+        <!-- placeholder logo. Replace with your circular logo image -->
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512'><rect width='100%' height='100%' fill='%23000000'/><text x='50%' y='52%' font-size='36' fill='%23adff2f' text-anchor='middle' font-family='Montserrat' font-weight='700'>TIPSTER<br/>SHADOW</text></svg>" alt="logo">
+      </div>
+
+      <h1>TIPSTER SHADOW</h1>
+      <div class="sub">550 suscriptores</div>
+
+      <div class="desc">
+        <span>👨‍💻 <span class="bold">Analista profesional</span> con más de 3 años de experiencia en el mercado deportivo 🏀⚽⚾🎰</span>
+        <div style="height:8px"></div>
+        <span>✨ <span class="bold">97% de efectividad</span> en nuestros pronósticos 🔥</span>
+      </div>
+
+      <div class="green">GRATIS POR TIEMPO LIMITADO</div>
+
+      <div class="cta">
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
+          <svg class="plane" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+          ÚNETE GRATIS AQUÍ
+        </a>
+      </div>
+
+      <div class="note">Esta es una invitación para unirte a TIPSTER SHADOW. Haz click en el botón para unirte.</div>
+
+    </div>
+  </div>
+</body>
+</html>
